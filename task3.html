@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> task 2 </title>
+<style>
+button
+{
+font-size:40px;
+padding:10px;
+border-radius:10px;
+margin:20px;
+}
+#container{
+text-align:center;
+}
+</style>
+</head>
+<body>
+<div id="container">
+ <button type="button" class=btn> </i> forward</button> <br> 
+ <button type="button" class="btn"> </i> left</button> 
+ <button type="button" class="btn"> </i> stop</button> 
+ <button type="button" class=btn> </i> right</button> <br>
+ <button type="button" class="btn"> </i> backward</button> 
+</div>
+ <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "7eda8237-0b3a-47c4-9bf5-63719fb3e7e7", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "f45018e4-665b-4634-ae4d-a65731152ae0", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
